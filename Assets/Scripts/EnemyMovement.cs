@@ -21,11 +21,6 @@ public class EnemyMovement : MonoBehaviour
         StartCoroutine(MovementToPoint());
     }
 
-    private void FixedUpdate()
-    {
-
-    }
-
     private Transform[] CreatePatrolPoints()
     {
         Transform[] patrolPoints = new Transform[_path.transform.childCount];
@@ -40,20 +35,28 @@ public class EnemyMovement : MonoBehaviour
 
     private IEnumerator MovementToPoint()
     {
+        const string IsWalk = "IsWalk";
+        float distanceToPoint = 0.3f;
         int indexPoint = Random.Range(0, _patrolPoints.Length);
-        WaitForSeconds waitForSeconds = new WaitForSeconds(2f);
+        WaitForSeconds waitForSeconds = new WaitForSeconds(3f);
+        WaitForFixedUpdate waitForFixedUpdate = new WaitForFixedUpdate();
 
         while (true)
         {
+            _animator.SetBool(IsWalk, true);
             transform.position = Vector3.MoveTowards(transform.position, _patrolPoints[indexPoint].position, _speed * Time.fixedDeltaTime);
 
-            if (transform.position == _patrolPoints[indexPoint].position)
+            var direction = _patrolPoints[indexPoint].position - transform.position;
+            transform.rotation = Quaternion.LookRotation(direction) * Quaternion.Euler(0, 1, 0);
+
+            if (Vector3.Distance(transform.position, _patrolPoints[indexPoint].position) <= distanceToPoint)
             {
+                _animator.SetBool(IsWalk, false);
                 indexPoint = Random.Range(0, _patrolPoints.Length);
                 yield return waitForSeconds;
             }
 
-            yield return null;
+            yield return waitForFixedUpdate;
         }
     }
 }

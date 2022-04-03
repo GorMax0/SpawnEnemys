@@ -1185,8 +1185,10 @@ GameObject:
   - component: {fileID: 6345809093338646210}
   - component: {fileID: 5279757288824741792}
   - component: {fileID: 5159702830583752368}
-  - component: {fileID: 4526568224317849908}
+  - component: {fileID: 7856194632527258255}
+  - component: {fileID: 275937495516107918}
   - component: {fileID: 1293289646650569296}
+  - component: {fileID: 7150588301354082374}
   m_Layer: 0
   m_Name: Nindjya
   m_TagString: Untagged
@@ -1239,7 +1241,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.75, y: 1.725, z: 0.4}
   m_Center: {x: 0, y: 0.85, z: 0}
---- !u!114 &4526568224317849908
+--- !u!114 &7856194632527258255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6006402306991758456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edc56bd6255e6cc43b0937bb70def710, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &275937495516107918
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1272,6 +1286,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7150588301354082374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6006402306991758456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c145e2e6634e97439c62cf9ecd43608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6495689714028382473
 GameObject:
   m_ObjectHideFlags: 0

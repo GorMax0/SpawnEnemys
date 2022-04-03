@@ -432,27 +432,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3368885825833304611, guid: bc19d38d520baef4d838dccdf1b5b559, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.948864
+      value: 18.019861
       objectReference: {fileID: 0}
     - target: {fileID: 3368885825833304611, guid: bc19d38d520baef4d838dccdf1b5b559, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.221334
+      value: 8.198916
       objectReference: {fileID: 0}
     - target: {fileID: 3368885825833304611, guid: bc19d38d520baef4d838dccdf1b5b559, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.421826
+      value: -6.895219
       objectReference: {fileID: 0}
     - target: {fileID: 3368885825833721074, guid: bc19d38d520baef4d838dccdf1b5b559, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.076177
+      value: 2.3020544
       objectReference: {fileID: 0}
     - target: {fileID: 3368885825833721074, guid: bc19d38d520baef4d838dccdf1b5b559, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.055489
+      value: 8.023951
       objectReference: {fileID: 0}
     - target: {fileID: 3368885825833721074, guid: bc19d38d520baef4d838dccdf1b5b559, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.185295
+      value: -1.6582623
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc19d38d520baef4d838dccdf1b5b559, type: 3}
@@ -466,10 +466,6 @@ PrefabInstance:
     - target: {fileID: 1959038438768916700, guid: 8cb45dbd12ac5ef4ebb7fde1883c6b88, type: 3}
       propertyPath: m_Name
       value: SpawnPoints
-      objectReference: {fileID: 0}
-    - target: {fileID: 5426309151497322381, guid: 8cb45dbd12ac5ef4ebb7fde1883c6b88, type: 3}
-      propertyPath: _maxCountSpawn
-      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6641855467901826217, guid: 8cb45dbd12ac5ef4ebb7fde1883c6b88, type: 3}
       propertyPath: m_RootOrder
@@ -514,10 +510,6 @@ PrefabInstance:
     - target: {fileID: 6641855467901826217, guid: 8cb45dbd12ac5ef4ebb7fde1883c6b88, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039341169966746871, guid: 8cb45dbd12ac5ef4ebb7fde1883c6b88, type: 3}
-      propertyPath: _maxCountSpawn
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cb45dbd12ac5ef4ebb7fde1883c6b88, type: 3}

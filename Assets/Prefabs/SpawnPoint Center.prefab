@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxCountSpawn: 5
-  _enemy: {fileID: 4526568224317849908, guid: b30c412205b620f42a6a669141eef778, type: 3}
+  _enemy: {fileID: 7856194632527258255, guid: b30c412205b620f42a6a669141eef778, type: 3}
 --- !u!198 &2876751720963446486
 ParticleSystem:
   m_ObjectHideFlags: 0

@@ -46,7 +46,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb79acf5f632b9f4ea4d49c3652a910e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemy: {fileID: 0}
 --- !u!1001 &6240761370204600148
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -165,6 +164,14 @@ PrefabInstance:
     - target: {fileID: 2876751720963446486, guid: 48a36e0d6e70882449ab22befeffdb3c, type: 3}
       propertyPath: EmissionModule.m_Bursts.Array.data[1].countCurve.minCurve.m_Curve.Array.data[1].outWeight
       value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 3164222393189727139, guid: 48a36e0d6e70882449ab22befeffdb3c, type: 3}
+      propertyPath: _enemy
+      value: 
+      objectReference: {fileID: 7856194632527258255, guid: b30c412205b620f42a6a669141eef778, type: 3}
+    - target: {fileID: 3164222393189727139, guid: 48a36e0d6e70882449ab22befeffdb3c, type: 3}
+      propertyPath: _maxCountSpawn
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3908050849563080537, guid: 48a36e0d6e70882449ab22befeffdb3c, type: 3}
       propertyPath: m_RootOrder

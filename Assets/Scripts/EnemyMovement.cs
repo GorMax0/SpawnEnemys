@@ -1,18 +1,18 @@
 using System.Collections;
 using UnityEngine;
 
-[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(EnemyAnimator))]
 public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] private PatrolPointsGroup _path;
     [SerializeField] private float _speed;
 
     private Transform[] _patrolPoints;
-    private Animator _animator;
+    private EnemyAnimator _enemyAnimator;
 
     private void Awake()
     {
-        _animator = GetComponent<Animator>();
+        _enemyAnimator = GetComponent<EnemyAnimator>();
     }
 
     private void Start()
@@ -35,7 +35,6 @@ public class EnemyMovement : MonoBehaviour
 
     private IEnumerator MovementToPoint()
     {
-        const string IsWalk = "IsWalk";
         float distanceToPoint = 0.3f;
         int indexPoint = Random.Range(0, _patrolPoints.Length);
         WaitForSeconds waitForSeconds = new WaitForSeconds(3f);
@@ -43,7 +42,7 @@ public class EnemyMovement : MonoBehaviour
 
         while (true)
         {
-            _animator.SetBool(IsWalk, true);
+            _enemyAnimator.Walk(true);
             transform.position = Vector3.MoveTowards(transform.position, _patrolPoints[indexPoint].position, _speed * Time.fixedDeltaTime);
 
             var direction = _patrolPoints[indexPoint].position - transform.position;
@@ -51,7 +50,7 @@ public class EnemyMovement : MonoBehaviour
 
             if (Vector3.Distance(transform.position, _patrolPoints[indexPoint].position) <= distanceToPoint)
             {
-                _animator.SetBool(IsWalk, false);
+                _enemyAnimator.Walk(false);
                 indexPoint = Random.Range(0, _patrolPoints.Length);
                 yield return waitForSeconds;
             }

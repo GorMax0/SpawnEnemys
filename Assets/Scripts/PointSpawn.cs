@@ -1,10 +1,10 @@
 using UnityEngine;
 
 [RequireComponent(typeof(ParticleSystem))]
-public class SpawnPoint : MonoBehaviour
+public class PointSpawn : MonoBehaviour
 {
     [SerializeField] private int _maxCountSpawn;
-    [SerializeField] private EnemyMovement _enemy;
+    [SerializeField] private Enemy _enemy;
 
     private int _currentCountSpawn = 1;
     private ParticleSystem _effect;

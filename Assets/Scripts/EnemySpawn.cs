@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnEnemy : MonoBehaviour
+public class EnemySpawn : MonoBehaviour
 {
-    private List<SpawnPoint> _spawnPoints = new List<SpawnPoint>();
+    private List<PointSpawn> _spawnPoints = new List<PointSpawn>();
 
     private void Start()
     {
-        _spawnPoints.AddRange(GetComponentsInChildren<SpawnPoint>());
+        _spawnPoints.AddRange(GetComponentsInChildren<PointSpawn>());
         StartCoroutine(Spawn());
     }
 
